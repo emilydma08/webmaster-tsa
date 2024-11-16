@@ -149,18 +149,46 @@ button:hover {
     margin: 10px 0;
     border: 1px solid #ddd;
     border-radius: 4px;
+    font-family: 'Spectral';
+    font-style: italic;
+    font-weight: 200;
+    font-display: swap;
+    font-size: 15px;
 }
 
 .popup button {
     background-color: #4cafa8;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 20px;    
+    margin-top: 25px; 
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400 900;
+    font-display: swap;
     font-size: 16px;
 }
- 
+
+h3{
+    font-family: 'Playfair Display';
+    font-style: norml;
+    font-weight: 400 900;
+    font-display: swap;
+    font-size: 50px;
+    color: rgb(18, 56, 77);
+}
+
+h4{
+    font-family: 'Playfair Display';
+    font-style: norml;
+    font-weight: 400 900;
+    font-display: swap;
+    font-size: 30px;
+    color: rgb(18, 56, 77);
+}
+
 /*Review Styling*/
 #Review {
     margin: 0px;
