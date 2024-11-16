@@ -42,6 +42,22 @@ body, ul, li{
     background-color: rgb(145, 140, 140);
 }
 
+footer {
+    background-color:antiquewhite;
+    float: bottom;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Playfair Display;
+}
+
+p a{
+    text-align: right;
+}
+
 /*Homepage Hero Styling*/
 .hero{
     background-image: url('/assets/LobsterSlippers2.jpg');
