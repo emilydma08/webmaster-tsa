@@ -201,6 +201,7 @@ main a {
     margin-bottom: 10px;
     letter-spacing: 2px;
     text-transform: uppercase;
+}
 
 .review-box-container {
     display: flex;
