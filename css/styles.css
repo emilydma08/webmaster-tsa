@@ -11,7 +11,7 @@ body, ul, li{
 
 .navbar{
     background-color:antiquewhite;
-    padding: 10px 20px;
+    padding: 30px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
