@@ -18,6 +18,11 @@ body, ul, li{
     align-items: center;
 }
 
+.nav-img{
+    margin-left:0px;
+    margin-right: 750px;
+}
+
 .navbar ul{
     display: flex;
     gap: 40px;
@@ -45,7 +50,7 @@ body, ul, li{
 
 /*Footer Styling*/
 footer {
-    background-color:rgb(86, 52, 7);
+    background-color:antiquewhite;
     float: bottom;
     height: 50px;
     width: 100%;
@@ -306,9 +311,7 @@ main a {
 #add-reviews h2{
     text-align: center;
 }
-#reviewForm {
-}
-  
+
 /*Feature Styling*/
 .features{
     display: flex;
