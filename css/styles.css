@@ -41,3 +41,47 @@ body, ul, li{
 .navbar a:hover{
     background-color: rgb(145, 140, 140);
 }
+
+/*Homepage Hero Styling*/
+.hero{
+    background-image: url('/assets/LobsterSlippers2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.hero-content{
+    padding: 20px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+button{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #693333;
+}
+
