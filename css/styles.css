@@ -215,8 +215,8 @@ main a {
 }
 .review-heading {
     letter-spacing: 1px;
-    margin: 30px 0px;
-    padding: 10px;
+    margin: 30px 0px 10px;
+    padding: 5px, 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -252,6 +252,7 @@ main a {
     padding: 20px;
     margin: 15px;
     cursor: pointer;
+    
 }
 .profile-img {
     width: 50px;
@@ -285,7 +286,7 @@ main a {
 
 }
 .review {
-    color: #f9d71c;
+    color: #efbe1e;
     margin-left: 50px;
 }
 .box-top {
@@ -311,6 +312,55 @@ main a {
 }
 #add-reviews h2{
     text-align: center;
+}
+#filterBlock {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    position: relative;
+    padding: 10px;
+    padding-top: 30px;
+    width: 90%;
+    z-index: 1;
+}
+
+.percentBar {
+    width: 300px;  
+    height: 12px;  
+    border-radius: 10px;
+    background-color: rgb(172, 165, 165);  
+    position: relative;
+}
+
+#details-block {
+    display: flex;
+    justify-content: left;
+    width: 90%;
+    padding-bottom: 30px;
+    margin-top: -40px;
+}
+#details-block #avg-details{
+    display: flex;
+    gap: 10px;
+}
+#details-block h3 {
+    text-align: center;
+}
+#details-block #average {
+    text-align: center;
+}
+.green-bar {
+    height: 12px;  
+    background-color: #efbe1e;  
+    margin: 5px 0;  
+    width: 0%;  
+    border-radius: 10px;
+}
+#reviewPopUp {
+    position: fixed;
+    box-shadow: 0px 0px 100px 200px rgba(119, 119, 119, 0.7);
+    z-index: 10;
 }
 
 /*Feature Styling*/
@@ -414,7 +464,6 @@ main a {
     margin-bottom: 10px;
 }
 
-
 /*FAQ Styling*/
 .faq-container {
     max-width: 900px;
@@ -490,3 +539,89 @@ main a {
 .faq-answer p{
     margin: 0;
 }
+
+/*Product Page Styling*/
+.product {
+    margin-top: 70px;
+    display: flex; /* Flexbox for side-by-side layout*/
+    justify-content: center; /* Add spacing between the two divs*/
+    align-items: center; /* Vertically align the items */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -50%);
+}
+
+.product-small {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center the thumbnails */
+    flex: 1; /* Allow this div to adjust its width */
+    max-width: 15%; /* Limit the width of thumbnails */
+}
+
+.product-small img {
+    margin: 10px 0;
+    cursor: pointer;
+    display: block;
+    opacity: 0.6;
+    max-width: 60%; /* Keep thumbnails responsive */
+    height: auto;
+}
+
+.product-small img:hover {
+    opacity: 1;
+}
+
+.img-container {
+    flex: 3; /* Give the main image more space */
+    align-items: center; /* Center the large image */
+    /*max-width: 70%; /* Adjust width as needed */
+}
+
+.img-container img {
+    align-items: center;
+    width: 100%; /* Make the image responsive */
+    height: 490px;
+    /*object-fit: contain; /* Maintain aspect ratio */
+}
+
+/* Styling for text container */
+.text-container {
+    display: flex;
+    flex: 2; /* Adjust the width of the text container relative to other elements */
+    padding: 20px; /* Add padding inside the container */
+    /*text-align: left; /* Align text to the left */
+    line-height: 1.8; /* Increase line height for better readability */
+    color: #333; /* Set text color to a neutral tone */
+    background-color: #f9f9f9; /* Add a subtle background color for distinction */
+    max-width: 400px; /* Limit the width of the text container */
+}
+
+/* Title styling */
+.text-container h2 {
+    font-size: 28px; /* Larger font size for the title */
+    margin-bottom: 15px; /* Add spacing below the title */
+    color: #007bff; /* Use a standout color for the title */
+}
+
+/* Paragraph styling */
+.text-container p {
+    font-size: 16px; /* Standard font size for the description */
+    margin-bottom: 15px; /* Add spacing below the paragraph */
+}
+
+/* List styling */
+.text-container ul {
+    font-size: 16px; /* Match font size to paragraph */
+    margin-bottom: 20px; /* Add spacing below the list */
+    padding-left: 20px; /* Indent the list items */
+    list-style-type: disc; /* Use bullet points for the list */
+}
+
+/* List item styling */
+.text-container ul li {
+    margin-bottom: 10px; /* Add spacing between list items */
+}
+
+

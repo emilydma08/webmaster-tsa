@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Review</title>
+    <title>Lobster Slippers</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/1c642e9043.js" crossorigin="anonymous"></script>
 </head>
@@ -29,21 +29,24 @@
             <span>Comments</span>
             <h1>Our Clients</h1>
         </div>
-            <div>
-                <h3>Our Customers Give Us:</h3>
+        <div id = "details-block">
+            <div id="rating-summary">
+                <h3>Rating Summary</h3>
+                <span  id = "avg-details">
+                    <p>Average Rating: </p>
                 <p id = "average-rating"></p>
+                </span>
+                
+                <ul>
+                    <li>5 Stars: <span id="count-5">0</span><div id="PercentBar5" class="percentBar"></div></li>
+                    <li>4 Stars: <span id="count-4">0</span><div id="PercentBar4" class="percentBar"></div></li>
+                    <li>3 Stars: <span id="count-3">0</span><div id="PercentBar3" class="percentBar"></div></li>
+                    <li>2 Stars: <span id="count-2">0</span><div id="PercentBar2" class="percentBar"></div></li>
+                    <li>1 Star: <span id="count-1">0</span><div id="PercentBar1" class="percentBar"></div></li>
+                </ul>
             </div>
-        <div id="rating-summary">
-            <h3>Rating Summary</h3>
-            <ul>
-                <li>5 Stars: <span id="count-5">0</span></li>
-                <li>4 Stars: <span id="count-4">0</span></li>
-                <li>3 Stars: <span id="count-3">0</span></li>
-                <li>2 Stars: <span id="count-2">0</span></li>
-                <li>1 Star: <span id="count-1">0</span></li>
-            </ul>
         </div>
-       
+            
         
         <button type = "button" id = "openForm">Submit Your Review!</button>
         <div id = "reviewPopUp" class="popup" onclick="myFunction()">
@@ -101,7 +104,19 @@
         </div>
             </span>
           </div>
+          <div id = "filterBlock">
+            <i class = "fas fa-filter" id = "filter"></i>
 
+          
+            <select id = "dateFilters">
+              <option value = "all">Select Filter</option>
+              <option value = "Oldest to Newest">Oldest to Newest</option>
+              <option value = "Newest to Oldest">Newest to Oldest</option>
+            </select>
+          </div>
+            
+
+          </select>
     <div id = "review-box-container">
     </div>
 
