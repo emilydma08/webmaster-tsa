@@ -329,9 +329,9 @@ main a {
     color: white;
     border: rgb(183,46,46) solid;
     border-radius: 3px;
-    font-size: 0.75rem;
+    font-size: 1rem;
     margin: auto;
-    height: 2rem;
+    height: 2.5rem;
     width: 7em;
     cursor: pointer;
     margin-top: 10px;
@@ -339,6 +339,7 @@ main a {
 
 .features-content h2{
     font-family: 'Enrequita';
+    font-size: 4em;
 }
 
 .features-content p{
