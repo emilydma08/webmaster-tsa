@@ -1,4 +1,5 @@
 /*General Styling*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
@@ -40,7 +41,7 @@ body, ul, li{
 
 .navbar li{
     list-style: none;
-    font-family: Playfair Display;
+    font-family: Barlow;
     letter-spacing: 0.5px;
 }
 
@@ -57,6 +58,11 @@ body, ul, li{
     background-color: rgb(145, 140, 140);
 }
 
+.navbar-brand img{
+    height: 3rem;
+    padding-top: .2rem;
+    }
+
 /*Footer Styling*/
 footer {
     background-color:var(--light-beige);
@@ -68,11 +74,56 @@ footer {
     justify-content: space-between;
     align-items: center;
     font-family: Playfair Display;
+    position: relative;
+    margin-bottom: 0;
 }
 
 footer p a{
     text-align: right;
 }
+
+/*  Style for dropdown menus */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d5d10eef;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* END - Style for drop down menus */
+/*  Navbar  End */
+
+  
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1199px (xl) */
+@media (max-width: 1199.98px) {
+   
+  }
+  
+  /* Devices under 992px (xl) */
+  @media (max-width: 991.98px) {
+   
+  }
+  
+  /* Devices under 768px (md) */
+  @media (max-width: 767.98px) {
+  
+  }
+/*============= MEDIA QUERIES END =============*/
 
 /*Homepage Hero Styling*/
 .hero{
@@ -95,11 +146,13 @@ footer p a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Barlow';
 }
 
 .hero h1{
     font-size: 3rem;
     margin-bottom: 10px;
+    font-family: 'Poppins';
 }
 
 .hero button{
@@ -129,12 +182,12 @@ footer p a{
 }
 
 .popup {
-    font-family: Arial, sans-serif;
+    font-family: Barlow;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: var(--light-beige);
+    background: white;
     padding: 20px;
     border-radius: 10px;
     border-width: 5px;
@@ -161,9 +214,10 @@ footer p a{
     width: 80%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ddd;
+    border: 1px solid;
+    background-color: var(--light-beige);
     border-radius: 4px;
-    font-family: 'Spectral';
+    font-family: 'Poppins';
     font-style: italic;
     font-weight: 200;
     font-display: swap;
@@ -171,22 +225,22 @@ footer p a{
 }
 
 .popup button {
-    background-color: #4cafa8;
+    background-color: rgb(18, 56, 77);
     color: #fff;
     padding: 10px 20px;    
     margin-top: 25px; 
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-family: 'Playfair Display';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400 900;
     font-display: swap;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .popup h3{
-    font-family: 'Playfair Display';
+    font-family: Barlow;
     font-style: norml;
     font-weight: 400 900;
     font-display: swap;
@@ -195,11 +249,13 @@ footer p a{
 }
 
 .popup h4{
-    font-family: 'Playfair Display';
+    font-family: 'Poppins';
     font-style: norml;
     font-weight: 400 900;
     font-display: swap;
-    font-size: 30px;
+    font-size: 18px;
+    padding: 10px;
+
     color: rgb(18, 56, 77);
 }
 
@@ -228,12 +284,12 @@ footer p a{
 }
 
 .features h2{
-    font-family: 'Enrequita';
+    font-family: 'Poppins';
     font-size: 3em;
 }
 
 .features p{
-    font-family: 'Playfair Display';
+    font-family: 'Barlow';
     font-size: 1em;
 }
 
@@ -246,7 +302,7 @@ footer p a{
 
 .text-section{
     flex: 0 0 40%;
-    padding-right: 10px;
+    padding-right: 10rem;
 }
 
 .feature-content:first-child{
@@ -382,87 +438,129 @@ footer p a{
 }
 
 /*Product Page Styling*/
-.product {
-    margin-top: 70px;
-    display: flex; /* Flexbox for side-by-side layout*/
-    justify-content: center; /* Add spacing between the two divs*/
-    align-items: center; /* Vertically align the items */
+.product {   
+    justify-content: center; 
+    align-items: center; 
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-80%, -50%);
 }
 
-.product-small {
+.product-small {    
     display: flex;
-    flex-direction: column; /* Stack images vertically */
-    align-items: center; /* Center the thumbnails */
-    flex: 1; /* Allow this div to adjust its width */
-    max-width: 15%; /* Limit the width of thumbnails */
+    flex-direction: column; 
+    top: 0px;
+    align-items:center; 
+    max-width: 70px; 
+    border-left: 20px;
 }
 
-.product-small img {
-    margin: 10px 0;
-    cursor: pointer;
-    display: block;
+ .product-small img{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 70px;
     opacity: 0.6;
-    max-width: 60%; /* Keep thumbnails responsive */
-    height: auto;
+    display:flex;
+    justify-content: space-between;
+ }
+
+  /*  Style for color choices in shop.HTML  */
+  .product-color {    
+    display: flex;
+    flex-direction: row; 
+    top: 0px;
+    align-items:center; 
+    max-width: 70px; 
+    border-left: 20px;
 }
+
+ .product-color img{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 70px;
+    display:flex;
+    justify-content: space-between;
+ } 
+
+/* This container will be used to display selection in Shop.html */
+ .grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    column-gap: 20px;
+    row-gap: 10px;
+    margin-left: 40px;
+    margin-top: 40px;
+    
+  }
+  .grid .first {
+    grid-column: 1 / 3;
+    grid-row:    1 / 1;
+    
+  }
+  .grid .two {
+    grid-column: 2 / 3;
+    grid-row:    1 / 1;
+  }
+ 
+  .grid .right {
+    grid-column: 3 / 3;
+    grid-row:    1 / 1;
+    font-family: Poppins;
+  }
+
+  .grid .two img{
+    max-width: 100%; 
+    max-height: 100%;
+  }
 
 .product-small img:hover {
     opacity: 1;
 }
 
 .img-container {
-    flex: 3; /* Give the main image more space */
-    align-items: center; /* Center the large image */
-    /*max-width: 70%; /* Adjust width as needed */
+    flex: 3; 
+    align-items: center;
+    max-width: 70%;
 }
 
 .img-container img {
     align-items: center;
-    width: 100%; /* Make the image responsive */
+    width: 100%; 
     height: 490px;
-    /*object-fit: contain; /* Maintain aspect ratio */
 }
 
-/* Styling for text container */
+/*Styling for text container*/
 .text-container {
-    display: flex;
-    flex: 2; /* Adjust the width of the text container relative to other elements */
-    padding: 20px; /* Add padding inside the container */
-    /*text-align: left; /* Align text to the left */
-    line-height: 1.8; /* Increase line height for better readability */
-    color: #333; /* Set text color to a neutral tone */
-    background-color: #f9f9f9; /* Add a subtle background color for distinction */
-    max-width: 400px; /* Limit the width of the text container */
+    margin-top: 70px;
+    display: flex; 
+    justify-content: center; 
+    align-items: right;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%, -50%);
+
 }
 
-/* Title styling */
 .text-container h2 {
-    font-size: 28px; /* Larger font size for the title */
-    margin-bottom: 15px; /* Add spacing below the title */
-    color: #007bff; /* Use a standout color for the title */
+    font-size: 28px;
+    margin-bottom: 15px; 
 }
 
-/* Paragraph styling */
 .text-container p {
-    font-size: 16px; /* Standard font size for the description */
-    margin-bottom: 15px; /* Add spacing below the paragraph */
+    font-size: 16px; 
+    margin-bottom: 15px; 
 }
 
-/* List styling */
 .text-container ul {
-    font-size: 16px; /* Match font size to paragraph */
-    margin-bottom: 20px; /* Add spacing below the list */
-    padding-left: 20px; /* Indent the list items */
-    list-style-type: disc; /* Use bullet points for the list */
+    font-size: 16px; 
+    margin-bottom: 20px; 
+    padding-left: 20px;
 }
 
-/* List item styling */
 .text-container ul li {
-    margin-bottom: 10px; /* Add spacing between list items */
+    margin-bottom: 10px; 
 }
 
 
