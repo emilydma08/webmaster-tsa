@@ -424,3 +424,73 @@ h2 {
 .faq-answer p{
     margin: 0;
 }
+
+.about-content{
+    text-align: center;
+    color: rgb(18, 56, 77);
+    padding: 5px;
+    float: center;
+}
+
+.column {
+    float: left;
+    width: 16.5%;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    border-radius: 10px; 
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  
+  .container {
+    padding: 0 16px;
+    text-align: center;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: rgb(18, 56, 77);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-family: Enriqueta;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 950px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  img.rounded-corners {
+    border-radius: 10px 10px 0px 0px;
+  }
+
