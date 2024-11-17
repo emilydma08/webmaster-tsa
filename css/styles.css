@@ -7,14 +7,21 @@ body, ul, li{
     margin: 0;
     padding: 0;
     list-style: none;
+    box-sizing: border-box;
 }
 
+/*Navbar Styling*/
 .navbar{
     background-color:antiquewhite;
-    padding: 30px 20px;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.nav-img{
+    margin-left:0px;
+    margin-right: 750px;
 }
 
 .navbar ul{
@@ -42,9 +49,26 @@ body, ul, li{
     background-color: rgb(145, 140, 140);
 }
 
+/*Footer Styling*/
+footer {
+    background-color:antiquewhite;
+    float: bottom;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Playfair Display;
+}
+
+footer p a{
+    text-align: right;
+}
+
 /*Homepage Hero Styling*/
 .hero{
-    background-image: url('/assets/LobsterSlippers2.jpg');
+    background-image: url('/assets/LobsterSlippers4.jpg');
     background-size: cover;
     background-position: center;
     height: 90vh;
@@ -65,12 +89,12 @@ body, ul, li{
     align-items: center;
 }
 
-h1{
+.hero h1{
     font-size: 3rem;
     margin-bottom: 10px;
 }
 
-button{
+.hero button{
     background-color: transparent;
     color: white;
     border: 2px solid white;
@@ -81,7 +105,387 @@ button{
     margin-top: 20px;
 }
 
-button:hover {
-    background-color: #693333;
+.hero button:hover {
+    background-color: rgb(183,46,46);
 }
 
+/*Pop-Up Styling*/
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: inset; 
+    border-color:rgb(18, 56, 77);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content {
+    text-align: center;
+
+}
+
+.popup .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #333;
+}
+
+.popup #emailInput {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Spectral';
+    font-style: italic;
+    font-weight: 200;
+    font-display: swap;
+    font-size: 15px;
+}
+
+.popup button {
+    background-color: #4cafa8;
+    color: #fff;
+    padding: 10px 20px;    
+    margin-top: 25px; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400 900;
+    font-display: swap;
+    font-size: 16px;
+}
+
+.popup h3{
+    font-family: 'Playfair Display';
+    font-style: norml;
+    font-weight: 400 900;
+    font-display: swap;
+    font-size: 50px;
+    color: rgb(18, 56, 77);
+}
+
+.popup h4{
+    font-family: 'Playfair Display';
+    font-style: norml;
+    font-weight: 400 900;
+    font-display: swap;
+    font-size: 30px;
+    color: rgb(18, 56, 77);
+}
+
+/*Review Styling*/
+#Review {
+    margin: 0px;
+    padding: 0px;
+    font-family: Spectral;
+}
+
+main a {
+    text-decoration: none;
+}
+
+#reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.review-heading {
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.review-heading h1 {
+    font-size: 2.2 rem;
+    font-weight: 500;
+    background-color: #202020;
+    color: #fff;
+    padding: 10px 20px;
+}
+.review-heading span {
+    font: 1.3rem;
+    color: #252525;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.review-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.review-box {
+    width: 500px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px; 
+}
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.profile {
+    display: flex;
+    align-items: center;
+}
+.name-user {
+    display: flex;
+    flex-direction: column;
+}
+.name-user strong {
+    color: #3d3d3d;
+    font-size: 1.1 rem;
+    letter-spacing: 0.5px;
+}
+.name-user span{
+    color: #979797;
+    font-size: 0.8 rem;
+
+}
+.review {
+    color: #f9d71c;
+    margin-left: 50px;
+}
+.box-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.client-details {
+    display: inline;
+}
+.client-details span:not(:last-child)::after {
+    content: "|";
+    padding: 5px;
+}
+
+.client-details span {
+    color: #616161;
+    font-size: 0.8 rem;
+}
+#add-reviews {
+    padding: 10px;
+}
+#add-reviews h2{
+    text-align: center;
+}
+
+/*Feature Styling*/
+.features{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-top: 0px;
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.features button{
+    background-color: rgb(183, 46, 46);
+    color: white;
+    border: rgb(183,46,46) solid;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    margin: auto;
+    height: 2rem;
+    width: 7em;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.features-content h2{
+    font-family: 'Enrequita';
+}
+
+.features-content p{
+    font-family: 'Playfair Display';
+}
+
+.feature-content{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.text-section{
+    flex: 0 0 40%;
+    padding-right: 10px;
+}
+
+.feature-content:first-child{
+    flex-direction:row;
+}
+
+.feature-content:first-child .text-section {
+    flex: 0 0 40%;
+    padding-right: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.feature-content:first-child .image-section {
+    flex: 0 0 60%;
+    margin-left: 0;
+}
+
+.feature-content:nth-child(2) .text-section {
+    margin-top: 30px;
+    flex: 0 0 60%; 
+    margin-left: 30px;
+    box-sizing: border-box;
+    padding-right: 10px;
+}
+
+.feature-content:nth-child(2) .image-section {
+    flex: 0 0 40%;
+    margin-left: 40px;
+}
+
+.feature:last-child{
+    flex-direction:row-reverse;
+}
+
+.image-section{
+    height: 400px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.image-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.feature button{
+    margin-top: 10px;
+}
+
+.rectangle{
+    width: 100px;
+    height: 4px;
+    background-color: rgb(183,46,46);
+    margin-bottom: 10px;
+}
+
+
+/*FAQ Styling*/
+.faq-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.faq-section {
+    margin-bottom: 30px;
+}
+
+.faq h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.faq-row {
+    width: 100%;
+}
+
+.faq-item {
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.faq-question {
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: none;
+    color: #333;
+    text-align: left;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.toggle-sign {
+    font-size: 1.5rem;
+    margin-left: 10px;
+    float: right;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    max-height: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.faq-answer.open {
+    display: block;
+    max-height: 500px;
+    padding: 10px;
+}
+
+.faq-answer p{
+    margin: 0;
+}
