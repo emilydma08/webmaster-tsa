@@ -62,7 +62,7 @@ footer {
     font-family: Playfair Display;
 }
 
-p a{
+footer p a{
     text-align: right;
 }
 
@@ -89,7 +89,7 @@ p a{
     align-items: center;
 }
 
-h1{
+.hero h1{
     font-size: 3rem;
     margin-bottom: 10px;
 }
@@ -105,7 +105,7 @@ h1{
     margin-top: 20px;
 }
 
-button:hover {
+.hero button:hover {
     background-color: rgb(183,46,46);
 }
 
@@ -177,7 +177,7 @@ button:hover {
     font-size: 16px;
 }
 
-h3{
+.popup h3{
     font-family: 'Playfair Display';
     font-style: norml;
     font-weight: 400 900;
@@ -186,7 +186,7 @@ h3{
     color: rgb(18, 56, 77);
 }
 
-h4{
+.popup h4{
     font-family: 'Playfair Display';
     font-style: norml;
     font-weight: 400 900;
@@ -428,7 +428,7 @@ main a {
     margin-bottom: 30px;
 }
 
-h2 {
+.faq h2 {
     color: #333;
     margin-bottom: 15px;
 }
