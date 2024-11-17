@@ -28,6 +28,25 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 //FAQ JS
+const faqQuestions = document.querySelectorAll('.faq-question');
+
+faqQuestions.forEach((question) => {
+    question.addEventListener('click', function() {
+        const answer = this.nextElementSibling;
+        const toggleSign = this.querySelector('.toggle-sign');
+
+        if (answer.style.display === "block" || answer.classList.contains('open')) {
+            answer.style.display = "none";
+            answer.classList.remove('open');
+            toggleSign.textContent = "+";
+        } else {
+            answer.style.display = "block";
+            answer.classList.add('open');
+            toggleSign.textContent = "−";
+        }
+    });
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     const reviews = [
         {
