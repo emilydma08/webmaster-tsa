@@ -27,6 +27,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+/*Product (Shop) Page*/
+/*enlarges the small images on the side*/
+function enlargeSmall(smallImg){
+    var fullImg= document.getElementById("imageBig");
+    fullImg.src = smallImg.src;
+}
+
 //FAQ JS
 const faqQuestions = document.querySelectorAll('.faq-question');
 
