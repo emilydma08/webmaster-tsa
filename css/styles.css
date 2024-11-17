@@ -66,6 +66,56 @@ footer p a{
     text-align: right;
 }
 
+/*  Style for dropdown menus */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d5d10eef;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* END - Style for drop down menus */
+/*  Navbar  End */
+
+/*=== SOCKET ===*/
+.socket {
+    background-image: linear-gradient(90deg,hsla(56, 90%, 52%, 0.937),#e2cc0c);
+    text-align: center;
+    padding: 1rem;
+    border-top: .05rem solid white;
+  }
+  
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1199px (xl) */
+@media (max-width: 1199.98px) {
+   
+  }
+  
+  /* Devices under 992px (xl) */
+  @media (max-width: 991.98px) {
+   
+  }
+  
+  /* Devices under 768px (md) */
+  @media (max-width: 767.98px) {
+  
+  }
+/*============= MEDIA QUERIES END =============*/
+
 /*Homepage Hero Styling*/
 .hero{
     background-image: url('/assets/LobsterSlippers4.jpg');
@@ -440,9 +490,9 @@ main a {
 
 .faq-item {
     width: 100%;
-    background-color: #f8f9fa;
+    background-color: #ffffff;
     padding: 10px 20px;
-    border: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
     margin-bottom: 10px;
     box-sizing: border-box;
     display: flex;
@@ -489,4 +539,88 @@ main a {
 
 .faq-answer p{
     margin: 0;
+}
+
+/*Product Page Styling*/
+.product {
+    margin-top: 70px;
+    display: flex; /* Flexbox for side-by-side layout*/
+    justify-content: center; /* Add spacing between the two divs*/
+    align-items: center; /* Vertically align the items */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -50%);
+}
+
+.product-small {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center the thumbnails */
+    flex: 1; /* Allow this div to adjust its width */
+    max-width: 15%; /* Limit the width of thumbnails */
+}
+
+.product-small img {
+    margin: 10px 0;
+    cursor: pointer;
+    display: block;
+    opacity: 0.6;
+    max-width: 60%; /* Keep thumbnails responsive */
+    height: auto;
+}
+
+.product-small img:hover {
+    opacity: 1;
+}
+
+.img-container {
+    flex: 3; /* Give the main image more space */
+    align-items: center; /* Center the large image */
+    /*max-width: 70%; /* Adjust width as needed */
+}
+
+.img-container img {
+    align-items: center;
+    width: 100%; /* Make the image responsive */
+    height: 490px;
+    /*object-fit: contain; /* Maintain aspect ratio */
+}
+
+/* Styling for text container */
+.text-container {
+    display: flex;
+    flex: 2; /* Adjust the width of the text container relative to other elements */
+    padding: 20px; /* Add padding inside the container */
+    /*text-align: left; /* Align text to the left */
+    line-height: 1.8; /* Increase line height for better readability */
+    color: #333; /* Set text color to a neutral tone */
+    background-color: #f9f9f9; /* Add a subtle background color for distinction */
+    max-width: 400px; /* Limit the width of the text container */
+}
+
+/* Title styling */
+.text-container h2 {
+    font-size: 28px; /* Larger font size for the title */
+    margin-bottom: 15px; /* Add spacing below the title */
+    color: #007bff; /* Use a standout color for the title */
+}
+
+/* Paragraph styling */
+.text-container p {
+    font-size: 16px; /* Standard font size for the description */
+    margin-bottom: 15px; /* Add spacing below the paragraph */
+}
+
+/* List styling */
+.text-container ul {
+    font-size: 16px; /* Match font size to paragraph */
+    margin-bottom: 20px; /* Add spacing below the list */
+    padding-left: 20px; /* Indent the list items */
+    list-style-type: disc; /* Use bullet points for the list */
+}
+
+/* List item styling */
+.text-container ul li {
+    margin-bottom: 10px; /* Add spacing between list items */
 }
