@@ -1,6 +1,6 @@
 /*Hero Styling*/
 .hero{
-    background-image: url('assets/LobsterSlippers4.jpg');
+    background-image: url('/assets/LobsterSlippers4.jpg');
     background-size: cover;
     background-position: center;
     height: 90vh;
@@ -207,7 +207,7 @@
 }
 
 .image-section{
-    height: 400px;
+    height: 600px;
     margin: 0;
     box-sizing: border-box;
 }
