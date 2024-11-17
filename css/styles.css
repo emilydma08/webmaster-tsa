@@ -215,8 +215,8 @@ main a {
 }
 .review-heading {
     letter-spacing: 1px;
-    margin: 30px 0px;
-    padding: 10px;
+    margin: 30px 0px 10px;
+    padding: 5px, 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -252,6 +252,7 @@ main a {
     padding: 20px;
     margin: 15px;
     cursor: pointer;
+    
 }
 .profile-img {
     width: 50px;
@@ -285,7 +286,7 @@ main a {
 
 }
 .review {
-    color: #f9d71c;
+    color: #efbe1e;
     margin-left: 50px;
 }
 .box-top {
@@ -312,7 +313,55 @@ main a {
 #add-reviews h2{
     text-align: center;
 }
+#filterBlock {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    position: relative;
+    padding: 10px;
+    padding-top: 30px;
+    width: 90%;
+    z-index: 1;
+}
 
+.percentBar {
+    width: 300px;  
+    height: 12px;  
+    border-radius: 10px;
+    background-color: rgb(172, 165, 165);  
+    position: relative;
+}
+
+#details-block {
+    display: flex;
+    justify-content: left;
+    width: 90%;
+    padding-bottom: 30px;
+    margin-top: -40px;
+}
+#details-block #avg-details{
+    display: flex;
+    gap: 10px;
+}
+#details-block h3 {
+    text-align: center;
+}
+#details-block #average {
+    text-align: center;
+}
+.green-bar {
+    height: 12px;  
+    background-color: #efbe1e;  
+    margin: 5px 0;  
+    width: 0%;  
+    border-radius: 10px;
+}
+#reviewPopUp {
+    position: fixed;
+    box-shadow: 0px 0px 100px 200px rgba(119, 119, 119, 0.7);
+    z-index: 10;
+}
 /*Feature Styling*/
 .features{
     display: flex;
@@ -489,3 +538,4 @@ main a {
 .faq-answer p{
     margin: 0;
 }
+
