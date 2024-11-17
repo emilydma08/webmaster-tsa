@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
     <!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400&display=swap" rel="stylesheet">
      <!-- Google Fonts Link For Icons -->
@@ -16,81 +17,107 @@
     
 </head>
 <body>          
-        <!-- Navigation -->
-<nav class="navbar bg-dark navbar-dark navbar-expand-lg sticky-top">
-    <div class="container-fluid">
-        <ul><li class="nav item"><a href="#" class="nav-link">Student store</a></li></ul>       
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav item"><a href="index.html" class="nav-link active">Home</a></li>                
-                <li class="nav item">
-                    <div class="dropdown"><a href="shop.html" class="nav-link">Shop</a>
-                        <div class="dropdown-content">
-                            <p><a href="#" class="nav-sub-link">Slippers</a></p>
-                            <p><a href="#" class="nav-sub-link">Shoes</a></p>
-                            <p><a href="#" class="nav-sub-link">Flip Flops</a></p>
+    <!-- Navigation -->
+    <nav class="navbar bg-dark navbar-dark navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <ul><li class="nav item"><a href="#" class="nav-link">Student store</a></li></ul>       
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav item"><a href="index.html" class="nav-link active">Home</a></li>                
+                    <li class="nav item">
+                        <div class="dropdown"><a href="shop.html" class="nav-link">Shop</a>
+                            <div class="dropdown-content">
+                                <p><a href="#" class="nav-sub-link">Slippers</a></p>
+                                <p><a href="#" class="nav-sub-link">Shoes</a></p>
+                                <p><a href="#" class="nav-sub-link">Flip Flops</a></p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="nav item"><a href="faq.html" class="nav-link">FAQs</a></li>                    
-                <li class="nav item"><a href="reviews.html" class="nav-link">Reviews</a></li>
-                <li class="nav item"><a href="about.html" class="nav-link">About</a></li>
-            </ul>
-        </div>
-        <!-- <input type="text" placeholder="Search.."><button type="submit"><i class="fa fa-search"></i></button>
-        <a href="#" class="navbar-brand"><img src="img/shopping-cart.png" alt="My Cart" title="My Cart"></a> -->
-    </div>
- </nav>
-<!-- End Navigation -->
-
-<main>
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Your new around-the-house obsession</h1>
-            <button class="buy-button">Buy Now</button>
-        </div>
-    </section>
-
-        <div class="popup-overlay" id="popupOverlay">
-            <div class="popup" id="popup">
-                <div class="popup-content">
-                    <span class="close" id="closePopup">&times;</span>
-                    <h3>BLACK FRIDAY SALE</h3>
-                    <h4>Sign up now to recieve <em>20%</em> off your first purchase!</h4>
-                    <input type="email" placeholder="Your email" id="emailInput">
-                    <button id="signUp">Sign Up Now</button>
-                </div>
+                    </li>
+                    <li class="nav item"><a href="faq.html" class="nav-link">FAQs</a></li>                    
+                    <li class="nav item"><a href="reviews.html" class="nav-link">Reviews</a></li>
+                    <li class="nav item"><a href="about.html" class="nav-link">About</a></li>
+                </ul>
             </div>
+            <!-- <input type="text" placeholder="Search.."><button type="submit"><i class="fa fa-search"></i></button>
+            <a href="#" class="navbar-brand"><img src="img/shopping-cart.png" alt="My Cart" title="My Cart"></a> -->
         </div>
+    </nav>
+    <!-- End Navigation -->
 
-        <section class="features">
-            <div class="feature-content">
-                <div class="text-section">
-                    <div class="rectangle"></div>
-                    <h2>Your New Favorite Slippers</h2>
-                    <p>A quirky, outdoor-ready footwear designed for both comfort and fun. Perfect for beach trips, poolside lounging, and casual strolls.</p>
-                    <a href='shop.html'><button class="buy-button2">Buy Now</button></a>
-                </div>
-                <div class="image-section">
-                    <img src="/assets/LobsterSlippers2.jpg" alt="Lobster Slippers">
-                </div>
-            </div>
-            <div class="feature-content">
-                <div class="image-section">
-                    <img src="/assets/LobsterSlippers3.jpg" alt="Lobster Slippers Design">
-                </div>
-                <div class="text-section">
-                    <div class="rectangle"></div>
-                    <h2>Amazing Design</h2>
-                    <p>Featuring a detailed lobster claw design they are made with durable, water-resistant materials to handle outdoor environments. The soles are textured and non-slip for great traction, while the slippers themselves are lightweight and easy to wear.</p>
-                    <a href='shop.html'><button class="buy-button2">Learn More</button></a>
-                </div>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Your new around-the-house obsession</h1>
+                <button class="buy-button">Buy Now</button>
             </div>
         </section>
-    </main>
+
+            <div class="popup-overlay" id="popupOverlay">
+                <div class="popup" id="popup">
+                    <div class="popup-content">
+                        <span class="close" id="closePopup">&times;</span>
+                        <h3>BLACK FRIDAY SALE</h3>
+                        <h4>Sign up now to recieve <em>20%</em> off your first purchase!</h4>
+                        <input type="email" placeholder="Your email" id="emailInput">
+                        <button id="signUp">Sign Up Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <section class="features">
+                <div class="feature-content">
+                    <div class="text-section">
+                        <div class="rectangle"></div>
+                        <h2>Your New Favorite Slippers</h2>
+                        <p>A quirky, outdoor-ready footwear designed for both comfort and fun. Perfect for beach trips, poolside lounging, and casual strolls.</p>
+                        <a href='https://www.amazon.com/Lobster-Slippers-Unisex-Sandals-Swimming/dp/B089GN7WCJ/ref=sr_1_5?crid=166HGCHSSOIY7&th=1' target="_blank"><button class="buy-button2">Buy Now</button></a>
+                    </div>
+                    <div class="image-section">
+                        <img src="/assets/LobsterSlippers2.jpg" alt="Lobster Slippers">
+                    </div>
+                </div>
+                <div class="feature-content">
+                    <div class="image-section">
+                        <img src="/assets/LobsterSlippers3.jpg" alt="Lobster Slippers Design">
+                    </div>
+                    <div class="text-section">
+                        <div class="rectangle"></div>
+                        <h2>Amazing Design</h2>
+                        <p>Featuring a detailed lobster claw design they are made with durable, water-resistant materials to handle outdoor environments. The soles are textured and non-slip for great traction, while the slippers themselves are lightweight and easy to wear.</p>
+                        <a href='shop.html'><button class="buy-button2">Learn More</button></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="testimonials">
+                <div class="testimonial-content">
+                    <h1 class="testimonial-heading">What Our Customers Say</h1>
+                    <div class="testimonials-container" id="testimonials-container">
+                        <div class="testimonials-slider" id="slider">
+                          <div class="testimonial">
+                            <p class="review-text">"I love these lobster sandals so much!!"</p>
+                            <p class="review-author">Mrs. Meanie</p>
+                          </div>
+                          <div class="testimonial">
+                            <p class="review-text">"Hilarious and fun to wear. They make me laugh"</p>
+                            <p class="review-author">Jojo</p>
+                          </div>
+                          <div class="testimonial">
+                            <p class="review-text">"Fun, silly, and practical flip flops"</p>
+                            <p class="review-author">Ron</p>
+                          </div>
+                          <div class="testimonial">
+                            <p class="review-text">"Exactly like the picture, shockingly comfortable, a steal for the price, perfect size, and I could go on!"</p>
+                            <p class="review-author">Jennifer</p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </section>
+        </main>
 
     <footer>
         <p>© 2024 Redmond High School Student Store</p>
