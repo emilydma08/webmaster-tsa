@@ -1,13 +1,9 @@
-#Review {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Poppins';
-}
-
+/*link decoration*/
 main a {
     text-decoration: none;
 }
 
+/*formats reviews*/
 #reviews {
     display: flex;
     justify-content: center;
@@ -94,6 +90,7 @@ main a {
     color: #efbe1e;
     margin-left: 50px;
 }
+/*Formating the percentage bar positions, checkboxes, and stars together as flex*/
 .star {
     color: #efbe1e;
 }
@@ -102,20 +99,20 @@ main a {
 
 }
 .counts {
-    margin-top: -3px;
+    margin-top: -2px;
     font-family: Barlow;
 } 
 .percentVisual {
     display: flex;
     gap: 10px;
 }
-
 .box-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
 }
+/*subheading of reviews*/
 .client-details {
     display: inline;
 }
@@ -128,6 +125,7 @@ main a {
     color: #616161;
     font-size: 0.8 rem;
 }
+/*Pop up formatting*/
 #add-reviews {
     padding: 10px;
 }
@@ -152,6 +150,7 @@ main a {
     background-color: var(--red);
 }
 
+/*formatting for filter drop down*/
 #filterBlock {
     display: flex;
     align-items: center;
@@ -165,7 +164,7 @@ main a {
     position: static;
     z-index: 0;
 }
-
+/* formatting how to percent bar looks*/
 .percentBar {
     width: 300px;  
     height: 12px;  
@@ -173,7 +172,7 @@ main a {
     background-color: rgb(172, 165, 165);  
     position: relative;
 }
-
+/* formatting the rating summary title, average rating, stars, percentages, bars*/
 #details-block {
     display: flex;
     justify-content: left;
@@ -203,17 +202,20 @@ main a {
     width: 0%;  
     border-radius: 10px;
 }
+/*creates a box shadow around pop up*/
 #reviewPopUp {
     position: fixed;
     box-shadow: 0px 0px 300px 300px rgba(119, 119, 119, 0.7);
     z-index: 10;
 }
+/*formats the info block and detail block together*/
 #top-block {
     display: flex;
     flex-direction: row;
     gap: 10px;
 
 }
+/*formatting of info block*/
 #info-block {
     width: 500px;
     text-align: justify;
