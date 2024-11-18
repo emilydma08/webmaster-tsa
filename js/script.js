@@ -176,64 +176,34 @@ document.addEventListener('DOMContentLoaded', () => {
             comment: "They are super uncomfortable at first but once they are a little worn they are fine. Wouldn't go for a long walk or anything but fine to keep by the door to go outside or run an errand. Got them for the beach & love em."
         },
         {
-            name: "Savannah Hadley",
-            username: "@savvyhads",
-            profileImg: "assets/profile1.jpg",
+            name: "	Yolanda R",
+            username: "@yol_r",
+            profileImg: "assets/profile2.jpg",
             rating: 5,
-            date: "Reviewed in the United States on June 4, 2024",
-            size: "7-8 Women/5.5-6.5 Men",
+            date: "Reviewed in the United States on August 12, 2024",
+            size: "11-12 Women/10-11 Men",
             color: "Red",
-            comment: "They are super uncomfortable at first but once they are a little worn they are fine. Wouldn't go for a long walk or anything but fine to keep by the door to go outside or run an errand. Got them for the beach & love em."
+            comment: "I bought these because they make me smile. Simple as that.\nNot meant for outside wear. If the front scrapes on the ground, color is scraped off of the sandal. But other than that they're great."
         },
         {
-            name: "Savannah Hadley",
-            username: "@savvyhads",
-            profileImg: "assets/profile1.jpg",
+            name: "satisfied customer",
+            username: "@...",
+            profileImg: "assets/ProfileImage.png",
             rating: 5,
-            date: "Reviewed in the United States on August 5, 2024",
-            size: "7-8 Women/5.5-6.5 Men",
+            date: "Reviewed in the United States on August 21, 2024",
+            size: "Size: 10-11 Women/8.5-9.5 Men",
             color: "Red",
-            comment: "They are super uncomfortable at first but once they are a little worn they are fine. Wouldn't go for a long walk or anything but fine to keep by the door to go outside or run an errand. Got them for the beach & love em."
+            comment: "These guys are amazing and my oldest loves them. I will be buying a few more pairs as they're incredible."
         },
         {
-            name: "Savannah Hadley",
-            username: "@savvyhads",
-            profileImg: "assets/profile1.jpg",
-            rating: 5,
-            date: "Reviewed in the United States on August 4, 1996",
-            size: "7-8 Women/5.5-6.5 Men",
+            name: "Lacie K",
+            username: "@loopsandlaces",
+            profileImg: "assets/ProfileImage.png",
+            rating: 3,
+            date: "Reviewed in the United States on September 12, 2024",
+            size: "Size: 10-11 Women/8.5-9.5 Men",
             color: "Red",
-            comment: "They are super uncomfortable at first but once they are a little worn they are fine. Wouldn't go for a long walk or anything but fine to keep by the door to go outside or run an errand. Got them for the beach & love em."
-        },
-        {
-            name: "Savannah Hadley",
-            username: "@savvyhads",
-            profileImg: "assets/profile1.jpg",
-            rating: 5,
-            date: "Reviewed in the United States on July 4, 2004",
-            size: "7-8 Women/5.5-6.5 Men",
-            color: "Red",
-            comment: "They are super uncomfortable at first but once they are a little worn they are fine. Wouldn't go for a long walk or anything but fine to keep by the door to go outside or run an errand. Got them for the beach & love em."
-        },
-        {
-            name: "Savannah Hadley",
-            username: "@savvyhads",
-            profileImg: "assets/profile1.jpg",
-            rating: 5,
-            date: "Reviewed in the United States on September 4, 2024",
-            size: "7-8 Women/5.5-6.5 Men",
-            color: "Red",
-            comment: "They are super uncomfortable at first but once they are a little worn they are fine. Wouldn't go for a long walk or anything but fine to keep by the door to go outside or run an errand. Got them for the beach & love em."
-        },
-        {
-            name: "Savannah Hadley",
-            username: "@savvyhads",
-            profileImg: "assets/profile1.jpg",
-            rating: 5,
-            date: "Reviewed in the United States on August 4, 2024",
-            size: "7-8 Women/5.5-6.5 Men",
-            color: "Red",
-            comment: "They are super uncomfortable at first but once they are a little worn they are fine. Wouldn't go for a long walk or anything but fine to keep by the door to go outside or run an errand. Got them for the beach & love em."
+            comment: "They are super uncomfortable and just slip off but they are so silly I still like them"
         }
     ];
 

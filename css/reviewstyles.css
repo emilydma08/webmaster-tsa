@@ -23,13 +23,16 @@ main a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 20px;
 }
 .review-heading h1 {
-    font-size: 2.2 rem;
+    font-size: 2.2rem;
     font-weight: 500;
-    background-color: #202020;
-    color: #fff;
+    color: white;
+    background-color: black;
     padding: 10px 20px;
+    font-family: 'Barlow';
+    display: inline-block; 
 }
 .review-heading span {
     font: 1.3rem;
@@ -100,7 +103,7 @@ main a {
 }
 .counts {
     margin-top: -3px;
-    font-family: Caladea;
+    font-family: Barlow;
 } 
 .percentVisual {
     display: flex;
@@ -130,17 +133,37 @@ main a {
 }
 #add-reviews h2{
     text-align: center;
+    font-family: 'Barlow';
 }
+
+#openForm{
+    background-color: var(--gray-black);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    margin-top: 20px; 
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#openForm:hover{
+    background-color: var(--red);
+}
+
 #filterBlock {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
-    position: relative;
     padding: 10px;
     padding-top: 30px;
     width: 90%;
-    z-index: 1;
+    font-family: Poppins;
+    font-size: 15px;
+    position: static;
+    z-index: 0;
 }
 
 .percentBar {
@@ -156,6 +179,7 @@ main a {
     justify-content: left;
     width: 90%;
     padding-bottom: 30px;
+    margin-top: -40px;
 }
 #details-block #avg-details{
     display: flex;
@@ -163,14 +187,14 @@ main a {
 }
 #details-block h3 {
     text-align: center;
-    font-family: Caladea;
+    font-family: 'Barlow';
 }
 #details-block #average {
     text-align: center;
-    font-family: Caladea;
+    font-family: 'Barlow';
 }
 #details-block p {
-    font-family: Caladea;
+    font-family: Poppins;
 }
 .green-bar {
     height: 12px;  
@@ -181,6 +205,16 @@ main a {
 }
 #reviewPopUp {
     position: fixed;
-    box-shadow: 0px 0px 100px 300px rgba(119, 119, 119, 0.7);
+    box-shadow: 0px 0px 50px 5px rgba(119, 119, 119, 0.7);
     z-index: 10;
+}
+#top-block {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+#info-block {
+    width: 500px;
+    text-align: justify;
 }
