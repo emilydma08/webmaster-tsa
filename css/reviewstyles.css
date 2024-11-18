@@ -157,7 +157,6 @@ main a {
     justify-content: left;
     width: 90%;
     padding-bottom: 30px;
-    margin-top: -40px;
 }
 #details-block #avg-details{
     display: flex;
