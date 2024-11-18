@@ -1,6 +1,6 @@
 /*Hero Styling*/
 .hero{
-    background-image: url('/assets/LobsterSlippers4.jpg');
+    background: url('../assets/LobsterSlippers4.jpg') repeat;
     background-size: cover;
     background-position: center;
     height: 90vh;
@@ -53,12 +53,12 @@
 }
 
 .popup {
-    font-family: Arial, sans-serif;
+    font-family: Barlow;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: var(--light-beige);
+    background: white;
     padding: 20px;
     border-radius: 10px;
     border-width: 5px;
@@ -85,9 +85,10 @@
     width: 80%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ddd;
+    border: 1px solid;
+    background-color: white;
     border-radius: 4px;
-    font-family: 'Spectral';
+    font-family: 'Poppins';
     font-style: italic;
     font-weight: 200;
     font-display: swap;
@@ -95,22 +96,22 @@
 }
 
 .popup button {
-    background-color: #4cafa8;
+    background-color: rgb(18, 56, 77);
     color: #fff;
     padding: 10px 20px;    
     margin-top: 25px; 
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-family: 'Playfair Display';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400 900;
     font-display: swap;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .popup h3{
-    font-family: 'Playfair Display';
+    font-family: Barlow;
     font-style: norml;
     font-weight: 400 900;
     font-display: swap;
@@ -119,13 +120,15 @@
 }
 
 .popup h4{
-    font-family: 'Playfair Display';
+    font-family: 'Poppins';
     font-style: norml;
     font-weight: 400 900;
     font-display: swap;
-    font-size: 30px;
+    font-size: 18px;
+    padding: 10px;
     color: rgb(18, 56, 77);
 }
+
 
 /*Feature Styling*/
 .features{
