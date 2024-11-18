@@ -20,26 +20,17 @@
         <!-- Navigation -->
 <nav class="navbar bg-dark navbar-dark navbar-expand-lg sticky-top">
     <div class="container-fluid">
-        <a href="#" class="navbar-brand"><img src="assets/RHSlogo.png" alt="RHSLogo" title="RhsLogo"></a>
-        <ul><li class="nav item"><a href="#" class="nav-link">Student store</a></li></ul>       
+        <a href="#" class="navbar-brand"><img src="assets/RHSlogo.png" alt="RHSLogo" title="RhsLogo"></a>      
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav item"><a href="index.html" class="nav-link active">Home</a></li>                
-                <li class="nav item">
-                    <div class="dropdown"><a href="shop.html" class="nav-link">Shop</a>
-                        <div class="dropdown-content">
-                            <p><a href="#" class="nav-sub-link">Slippers</a></p>
-                            <p><a href="#" class="nav-sub-link">Shoes</a></p>
-                            <p><a href="#" class="nav-sub-link">Flip Flops</a></p>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav item"><a href="faq.html" class="nav-link">FAQs</a></li>                    
-                <li class="nav item"><a href="reviews.html" class="nav-link">Reviews</a></li>
-                <li class="nav item"><a href="about.html" class="nav-link">About</a></li>
+            <ul>
+                <li class="nav item"><a href="index.html" class="active">Home</a></li>                
+                <li class="nav item"><a href="shop.html">Shop</a></li>
+                <li class="nav item"><a href="faq.html" >FAQs</a></li>                    
+                <li class="nav item"><a href="reviews.html" >Reviews</a></li>
+                <li class="nav item"><a href="about.html">About</a></li>
             </ul>
         </div>
         
@@ -51,7 +42,7 @@
         <section class="hero">
             <div class="hero-content">
                 <h1>Your new around-the-house obsession</h1>
-                <button class="buy-button">Buy Now</button>
+                <button onClick="window.open('https://www.amazon.com/Lobster-Slippers-Unisex-Sandals-Swimming/dp/B089GN7WCJ/ref=sr_1_5?crid=166HGCHSSOIY7&th=1&psc=1', '_blank')" class="buy-button">Buy Now</button>
             </div>
         </section>
 
@@ -91,6 +82,15 @@
                 </div>
             </div>
         </section>
+
+            <video autoplay muted loop id="video">
+                <source src="/assets/lobsterVideo.mp4" type="video/mp4">
+            </video>
+        <div class="video-content">
+            <h1 class="video-text" style="padding-left: 180px;">fun</h1>
+            <h1 class="video-text" style="padding-left: 500px;">stylish</h1>
+            <h1 class="video-text" style="padding-left: 830px;">comfortable</h1>
+        </div>
     </main>
 
     <footer>

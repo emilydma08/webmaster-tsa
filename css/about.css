@@ -1,0 +1,142 @@
+.about-content{
+    text-align: center;
+    color: rgb(18, 56, 77);
+    padding-left: 5%;
+    padding-right:5%;
+    float: center;
+    font-size:16px;
+}
+
+  .banner-image{
+    width: 100%;
+  }
+
+  .headerText{
+    position: absolute;
+    top: 190px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Enriqueta;
+    font-size: 70px;
+  }
+
+  .story{
+    width: 50%; 
+    border-style:double;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top:30px;
+  }
+  .story-img{
+    padding-top: 80px;
+    float:right;
+  }
+
+  .story-text{
+    font-family: Enriqueta;
+  }
+
+  .story-header{
+    font-family: Playfair-Display;
+    font-size: 50px; 
+  }
+
+  .company{
+    margin-top: 50px;
+    background-image: url('/assets/RHScampus.png');
+    width:100%;
+    height:270px;
+    border-top-style: double;
+    border-top-width: 15px;
+    border-top-color:#D0ECE9;
+    border-bottom-style: double;
+    border-bottom-color:#D0ECE9;
+    border-bottom-width: 15px;
+  }
+
+  .company-header{
+    font-family: Caladea;
+    font-style: normal;
+    font-weight: 1000;
+    font-display: swap;
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    position:absolute;
+    top:990px;
+    left:5%;
+  }
+
+  .company-text{
+    position:absolute;
+    margin-right: 40px;
+    top: 960px;
+    left: 65%;
+    font-family: Caladea;
+    font-weight: 1000;
+    font-size:15px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .column {
+    float: left;
+    width: 16.5%;
+    margin-bottom: 30px; 
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    border-radius: 10px; 
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  
+  .container {
+    padding: 0 7px;
+    text-align: center;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: rgb(18, 56, 77);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-family: Enriqueta;
+  }
+  .button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 950px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  img.rounded-corners {
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  
