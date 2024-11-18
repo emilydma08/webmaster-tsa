@@ -5,10 +5,6 @@
     --light-blue: #cbe0ecff;
 }
 
-body{
-    background-color: var(--light-beige);
-}
-
 /*Hero Styling*/
 .hero{
     background: url('../assets/LobsterSlippers4.jpg') repeat;
@@ -177,7 +173,7 @@ body{
 }
 
 .features p{
-    font-size: 1em;
+    font-size: 20px;
 }
 
 .feature-content{
@@ -185,7 +181,6 @@ body{
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: var(--light-beige);
 }
 
 .text-section{
@@ -306,12 +301,19 @@ body{
 }
 
 .review-text {
-  font-size: 3em;
+  font-size: 2em;
+  margin: 10px 0;
+  font-family: 'Poppins';
   margin: 10px 0;
 }
 
 .review-author {
   color: white;
+  font-family: 'Barlow'
+}
+
+.testimonials img{
+    width: 20%;
 }
 
 /*Slippers Chart*/
