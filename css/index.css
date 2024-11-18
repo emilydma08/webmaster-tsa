@@ -1,3 +1,14 @@
+:root{
+    --red: #dd5248ff;
+    --gray-black: #24252eff;
+    --light-beige: #efe1d1ff;
+    --light-blue: #cbe0ecff;
+}
+
+body{
+    background-color: var(--light-beige);
+}
+
 /*Hero Styling*/
 .hero{
     background: url('../assets/LobsterSlippers4.jpg') repeat;
@@ -53,7 +64,7 @@
 }
 
 .popup {
-    font-family: Barlow;
+    font-family: 'Barlow';
     position: absolute;
     top: 50%;
     left: 50%;
@@ -112,7 +123,7 @@
 }
 
 .popup h3{
-    font-family: Barlow;
+    font-family: 'Barlow';
     font-style: norml;
     font-weight: 400 900;
     font-display: swap;
@@ -137,9 +148,15 @@
     flex-direction: column;
     padding: 10px;
     padding-top: 0px;
-    width: 90%;
+    margin-bottom: 30px;
+    width: 75%;
     margin: 0 auto;
     box-sizing: border-box;
+}
+
+.features img{
+    margin: auto;
+    width: 5rem;
 }
 
 .features button{
@@ -156,12 +173,10 @@
 }
 
 .features h2{
-    font-family: 'Enrequita';
     font-size: 3em;
 }
 
 .features p{
-    font-family: 'Playfair Display';
     font-size: 1em;
 }
 
@@ -170,6 +185,7 @@
     width: 100%;
     margin: 0;
     padding: 0;
+    background-color: var(--light-beige);
 }
 
 .text-section{
@@ -203,7 +219,7 @@
 
 .feature-content:nth-child(2) .image-section {
     flex: 0 0 40%;
-    margin-left: 40px;
+    margin-left: 30px;
 }
 
 .feature:last-child{
@@ -238,11 +254,13 @@
     text-align: center;
     padding: 20px;
     color: white;
+    margin: 0 auto;
+    width: 100%;
 }
 
+
 .testimonial-heading{
-    font-size: 80px;
-    font-family: 'Playfair Display';
+    font-size: 2rem;
     margin-bottom: 15px;
 }
 
@@ -250,6 +268,8 @@
     background-color: var(--gray-black);
     width: 100%;
     height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 
 .testimonials-container{
@@ -259,7 +279,7 @@
     overflow: hidden;
     position: relative;
     margin-top: 20px;
-    height: 150px;
+    height: auto;
     cursor: pointer;
 }
 
@@ -282,13 +302,36 @@
   padding: 20px;
   box-sizing: border-box;
   background-color: var(--gray-black);
+  margin-bottom: none;
 }
 
 .review-text {
-  font-size: 1.7rem;
+  font-size: 3.5rem;
   margin: 10px 0;
 }
 
 .review-author {
   color: white;
+}
+
+/*Slippers Chart*/
+.chart{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.chart h2{
+    margin-bottom: 10px;
+    font-size: 3rem;
+}
+
+.chart img{
+    width: 60%;
+    height: auto;
+    padding-top: 20px;
 }
