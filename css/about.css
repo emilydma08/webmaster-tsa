@@ -43,7 +43,7 @@
 
   .company{
     margin-top: 50px;
-    background-image: url('/assets/RHScampus.png');
+    background-image: url('../assets/RHScampus.png');
     width:100%;
     height:270px;
     border-top-style: double;
