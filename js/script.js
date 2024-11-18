@@ -355,7 +355,6 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault();
 
         if (userRating === 0) {
-            alert("Please select a rating!");
             return;
         }
 
@@ -403,4 +402,6 @@ closeReviewPopUp();
 openThePopup.addEventListener('click', openReviewPopup);
 closePopup.addEventListener('click', closeReviewPopUp);
 submitReview.addEventListener('click', closeReviewPopUp);
+
+
 
