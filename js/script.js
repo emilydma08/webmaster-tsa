@@ -114,8 +114,117 @@ faqQuestions.forEach((question) => {
     });
 });
 //Review JS
+//Review JS
 document.addEventListener('DOMContentLoaded', () => {
+    let typeRating = [];
+    document.getElementById("show-five-stars").addEventListener('change',(event)=> {
+        if (event.target.checked) {
+            if(!typeRating.includes(5)) {
+        typeRating.push(5);
+            }
+        } else {
+            typeRating = typeRating.filter(item => item !== rating)
+        }
+    });
+    document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+        checkbox.addEventListener('change', (event) => {
+            const rating = parseInt(event.target.value);
+            if (event.target.checked) {
+                if (!typeRating.includes(rating)) {
+                    typeRating.push(rating);
+                }
+            } else {
+                typeRating = typeRating.filter(item => item !== rating);
+            }
+            renderReviews(); 
+        });
+    });
+    document.getElementById("show-four-stars").addEventListener('change',(event)=> {
+        if (event.target.checked) {
+            typeRating.push(4);
+        }
+    });
+    document.getElementById("show-three-stars").addEventListener('change',(event)=> {
+        if (event.target.checked) {
+            typeRating.push(3);
+        }
+    });
+    document.getElementById("show-two-stars").addEventListener('change',(event)=> {
+        if (event.target.checked) {
+            typeRating.push(2);
+        }
+    });
+    document.getElementById("show-one-stars").addEventListener('change',(event)=> {
+        if (event.target.checked) {
+            typeRating.push(1);
+        }
+    });
+    let selectedDateOrder = 'all';
+    document.getElementById('dateFilters').addEventListener('change', (event) => {
+        selectedDateOrder = event.target.value;
+        renderReviews();
+    });
     const reviews = [
+        {
+            name: "Savannah Hadley",
+            username: "@savvyhads",
+            profileImg: "assets/profile1.jpg",
+            rating: 5,
+            date: "Reviewed in the United States on August 4, 2024",
+            size: "7-8 Women/5.5-6.5 Men",
+            color: "Red",
+            comment: "They are super uncomfortable at first but once they are a little worn they are fine. Wouldn't go for a long walk or anything but fine to keep by the door to go outside or run an errand. Got them for the beach & love em."
+        },
+        {
+            name: "Savannah Hadley",
+            username: "@savvyhads",
+            profileImg: "assets/profile1.jpg",
+            rating: 5,
+            date: "Reviewed in the United States on June 4, 2024",
+            size: "7-8 Women/5.5-6.5 Men",
+            color: "Red",
+            comment: "They are super uncomfortable at first but once they are a little worn they are fine. Wouldn't go for a long walk or anything but fine to keep by the door to go outside or run an errand. Got them for the beach & love em."
+        },
+        {
+            name: "Savannah Hadley",
+            username: "@savvyhads",
+            profileImg: "assets/profile1.jpg",
+            rating: 5,
+            date: "Reviewed in the United States on August 5, 2024",
+            size: "7-8 Women/5.5-6.5 Men",
+            color: "Red",
+            comment: "They are super uncomfortable at first but once they are a little worn they are fine. Wouldn't go for a long walk or anything but fine to keep by the door to go outside or run an errand. Got them for the beach & love em."
+        },
+        {
+            name: "Savannah Hadley",
+            username: "@savvyhads",
+            profileImg: "assets/profile1.jpg",
+            rating: 5,
+            date: "Reviewed in the United States on August 4, 1996",
+            size: "7-8 Women/5.5-6.5 Men",
+            color: "Red",
+            comment: "They are super uncomfortable at first but once they are a little worn they are fine. Wouldn't go for a long walk or anything but fine to keep by the door to go outside or run an errand. Got them for the beach & love em."
+        },
+        {
+            name: "Savannah Hadley",
+            username: "@savvyhads",
+            profileImg: "assets/profile1.jpg",
+            rating: 5,
+            date: "Reviewed in the United States on July 4, 2004",
+            size: "7-8 Women/5.5-6.5 Men",
+            color: "Red",
+            comment: "They are super uncomfortable at first but once they are a little worn they are fine. Wouldn't go for a long walk or anything but fine to keep by the door to go outside or run an errand. Got them for the beach & love em."
+        },
+        {
+            name: "Savannah Hadley",
+            username: "@savvyhads",
+            profileImg: "assets/profile1.jpg",
+            rating: 5,
+            date: "Reviewed in the United States on September 4, 2024",
+            size: "7-8 Women/5.5-6.5 Men",
+            color: "Red",
+            comment: "They are super uncomfortable at first but once they are a little worn they are fine. Wouldn't go for a long walk or anything but fine to keep by the door to go outside or run an errand. Got them for the beach & love em."
+        },
         {
             name: "Savannah Hadley",
             username: "@savvyhads",
@@ -127,13 +236,47 @@ document.addEventListener('DOMContentLoaded', () => {
             comment: "They are super uncomfortable at first but once they are a little worn they are fine. Wouldn't go for a long walk or anything but fine to keep by the door to go outside or run an errand. Got them for the beach & love em."
         }
     ];
-    let userRating = 0;
-    
+
+    function calculateTotalRatingCount() {
+        const ratings = countRatings();
+        let totalRatings = 0;
+        for (let rating in ratings) {
+            totalRatings += ratings[rating];
+        }
+        return totalRatings;
+    }
+
     function calculateAverageRating() {
-        const totalRating = reviews.reduce((sum, review) => sum + review.rating, 0);
-        const averageRating = (reviews.length > 0) ? (totalRating / reviews.length).toFixed(1) : 0;
+        const totalRatings = calculateTotalRatingCount();
+        const totalRatingSum = reviews.reduce((sum, review) => {
+            return review.rating !== 0 ? sum + review.rating : sum;
+        }, 0);
+        const averageRating = totalRatings > 0 ? (totalRatingSum / totalRatings).toFixed(1) : 0;
         return averageRating;
-        return totalRating;
+    }
+
+    function countRatings() {
+        const ratingCount = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0};
+        reviews.forEach(review => {
+            if (review.rating !== 0) {
+                ratingCount[review.rating]++;
+            }
+        });
+        return ratingCount;
+    }
+
+    function calculatePercentage() {
+        const percentages = {};
+        const total = calculateTotalRatingCount();
+        const ratings = countRatings();
+        for (let i = 1; i <= 5; i++) {
+            if (ratings[i] > 0 && total > 0) {
+                percentages[i] = parseFloat((100 * (ratings[i] / total)).toFixed(0));
+            } else {
+                percentages[i] = 0;
+            }
+        }
+        return percentages;
     }
 
     function updateAverageRating() {
@@ -142,21 +285,57 @@ document.addEventListener('DOMContentLoaded', () => {
         averageRatingElement.textContent = `${averageRating} out of 5!`;
     }
 
-    function countRatings() {
-        const ratingCount = {1: 0, 2: 0, 3: 0, 4: 0,5: 0};
-        reviews.forEach(review => {
-            ratingCount[review.rating]++;
-        });
-        return ratingCount;
-    }
 
-    function updateRatingSummary() {
-        const ratingCounts = countRatings(); 
+    function updatePercentageSummary() {
+        const percentageCounts = calculatePercentage();
         for (let i = 1; i <= 5; i++) {
-            document.getElementById(`count-${i}`).textContent = ratingCounts[i];
+            document.getElementById(`count-${i}`).textContent = percentageCounts[i] + "%";
         }
     }
 
+    function updateGreenBars() {
+        const percentages = calculatePercentage();
+        for (let i = 1; i <= 5; i++) {
+            const percentBar = document.getElementById(`PercentBar${i}`);
+            const percent = percentages[i];
+            const redPercent = 100 - percent;
+
+            if (percentBar) {
+                percentBar.style.width = '100%';
+                percentBar.innerHTML = `<div class="green-bar" style="width: ${percent}%;"></div><div class="red-bar" style="width: ${redPercent}%;"></div>`;
+            }
+        }
+    }
+
+    function renderReviews() {
+        const reviewContainer = document.getElementById('review-box-container');
+        reviewContainer.innerHTML = '';
+        const reversedReviews = [...reviews].reverse();
+        let filteredReviews = reversedReviews.filter(review => {
+            return typeRating.length == 0 || typeRating.includes(review.rating);
+        });
+        let sortedReviews = [...filteredReviews];  
+        if (selectedDateOrder !== 'all') {
+            sortedReviews = sortedReviews.sort((a, b) => {
+                const dateA = new Date(a.date);
+                const dateB = new Date(b.date);
+                if (selectedDateOrder === "Oldest to Newest") {
+                    return dateA - dateB;
+                } else if (selectedDateOrder === "Newest to Oldest") {
+                    return dateB - dateA;
+                }
+                return 0;
+            });
+        }
+    
+        sortedReviews.forEach(review => {
+            reviewContainer.innerHTML += createReviewHTML(review);
+        });
+    
+        updateAverageRating();
+        updatePercentageSummary();
+        updateGreenBars();
+    }
     function createReviewHTML(review) {
         return `
             <div class="review-box">
@@ -188,16 +367,6 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
     }
 
-    function renderReviews() {
-        const reviewContainer = document.getElementById('review-box-container');
-        reviewContainer.innerHTML = '';
-        reviews.forEach(review => {
-            reviewContainer.innerHTML += createReviewHTML(review);
-        });
-        updateAverageRating();
-        updateRatingSummary();
-    }
-
     renderReviews();
 
     const stars = document.querySelectorAll("#star-rating .star");
@@ -215,8 +384,8 @@ document.addEventListener('DOMContentLoaded', () => {
     reviewForm.addEventListener('submit', function(event) {
         event.preventDefault();
 
-        if (userRating == 0) {
-            alert("Please Select Rating!");
+        if (userRating === 0) {
+            alert("Please select a rating!");
             return;
         }
 
@@ -250,42 +419,18 @@ document.addEventListener('DOMContentLoaded', () => {
 const reviewPopUp = document.getElementById('reviewPopUp');
 const closePopup = document.getElementById('x-out');
 const submitReview = document.getElementById("submitButton");
-const openThePopup = document.getElementById("openForm")
+const openThePopup = document.getElementById("openForm");
+
 function openReviewPopup() {
     reviewPopUp.style.display = 'block';
 }
+
 function closeReviewPopUp() {
     reviewPopUp.style.display = 'none';
 }
+
 closeReviewPopUp();
-openThePopup.addEventListener('click',openReviewPopup);
-closePopup.addEventListener('click',closeReviewPopUp);
+openThePopup.addEventListener('click', openReviewPopup);
+closePopup.addEventListener('click', closeReviewPopUp);
 submitReview.addEventListener('click', closeReviewPopUp);
-//Pop-Up JS
-document.addEventListener('DOMContentLoaded', function () {
-    const popupOverlay = document.getElementById('popupOverlay');
-    const popup = document.getElementById('popup');
-    const closePopup = document.getElementById('closePopup');
-    const signUp = document.getElementById('signUp')
-    const emailInput = document.getElementById('emailInput');
 
-    function openPopup() {
-        popupOverlay.style.display = 'block';
-    }
-
-    function closePopupFunc() {
-        popupOverlay.style.display = 'none';
-    }
-
-    openPopup();
-
-    closePopup.addEventListener('click', closePopupFunc);
-
-    signUp.addEventListener('click', closePopupFunc);
-
-    popupOverlay.addEventListener('click', function (event) {
-        if (event.target === popupOverlassy) {
-            closePopupFunc();
-        }
-    });
-});
