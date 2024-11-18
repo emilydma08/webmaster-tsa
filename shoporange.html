@@ -14,31 +14,21 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
 </head>
-<body>
-            
+<body>      
         <!-- Navigation -->
 <nav class="navbar bg-dark navbar-dark navbar-expand-lg sticky-top">
     <div class="container-fluid">
-        <a href="#" class="navbar-brand"><img src="assets/RHSlogo.png" alt="RHSLogo" title="RhsLogo"></a>
-        <ul><li class="nav item"><a href="#" class="nav-link">Student store</a></li></ul>       
+        <a href="#" class="navbar-brand"><img src="assets/RHSlogo.png" alt="RHSLogo" title="RhsLogo"></a>      
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav item"><a href="index.html" class="nav-link">Home</a></li>                
-                <li class="nav item">
-                    <div class="dropdown"><a href="shop.html" class="nav-link active">Shop</a>
-                        <div class="dropdown-content">
-                            <p><a href="#" class="nav-sub-link">Slippers</a></p>
-                            <p><a href="#" class="nav-sub-link">Shoes</a></p>
-                            <p><a href="#" class="nav-sub-link">Flip Flops</a></p>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav item"><a href="faq.html" class="nav-link">FAQs</a></li>                    
-                <li class="nav item"><a href="reviews.html" class="nav-link">Reviews</a></li>
-                <li class="nav item"><a href="about.html" class="nav-link">About</a></li>
+            <ul>
+                <li class="nav item"><a href="index.html" >Home</a></li>                
+                <li class="nav item"><a href="shop.html" class="active">Shop</a></li>
+                <li class="nav item"><a href="faq.html" >FAQs</a></li>                    
+                <li class="nav item"><a href="reviews.html" >Reviews</a></li>
+                <li class="nav item"><a href="about.html" >About</a></li>
             </ul>
         </div>
         
@@ -54,28 +44,29 @@
                 <img id="prodimg"src="assets/LobsterSlippersOrange3.jpg" alt="A picture of the TOTENJS Lobster Slippers" onmouseover="enlargeSmall(this)">
             </div>
             <div class="item two">
-              <img id="imageBig" src="assets/LobsterSlippersOrange2.jpg" width="650px" height="680px" >
+              <img id="imageBig" src="assets/LobsterSlippersOrange2.jpg" width="600px" height="450px" >
             </div>
             
             <div class="item right">
-                <div class="rectangle"></div>
-                <h2>Lobster Slippers</h2>
+                <h2>Lobster Slippers</h2><br>
                 <p>
                     Out of the desire to add color to the footwear market, Student Store is here to provide you with the ULTIMATE footwear style. <br>
                     While providing comfort for your feet, your lobster will make you the life of your party! <br>
         
                 </p>
                 <ul>
-                    <li>One of the most UNIQUE designs for footwear</li><br>
-                    <li>Features:</li>
+                    <li><b>Features:</b></li>
                     <li>Strong, lightweight, elastic, shockproof material (all the better to WALK with)</li>
                     <li>Soft, flexible, comfortable (all the better to RELAX with) </li>
-                    <li>High density, high elastic and anti-skidding sole (all the better to DANCE with)</li>
-
-                </ul><br>
-                        <a href='shop.html'><button class="buy-button2">Buy Now</button></a><br><br>
+                    <li>High density, high elastic and anti-skidding sole (all the better to DANCE with)</li><br>
+                    <li><b>Product Description:</b></li>
+                    <li><b>Material:</b> Rubber and synthetic materials</li>
+                    <li><b>Closure type:</b> Slip on</li>
+                    <li><b>Care instructions:</b> Hand Wash Only</li>
+                </ul>
+                <button onClick="window.open('https://www.amazon.com/Lobster-Slippers-Unisex-Sandals-Swimming/dp/B089GND1YM/ref=sr_1_5?crid=166HGCHSSOIY7&th=1&psc=1', '_blank')" class="buy-button-shop">Buy Now</button>
                         <!-- Color choices -->
-                         <b>Color: </b><label id="color-text">Orange</label>
+                        <br><b>Color: </b><label id="color-text">Orange</label>
                         <div class="product-color">         
                             <img id="prodimg"src="assets/LobsterSlippers7.jpg" alt="A picture of the TOTENJS Lobster Slippers" onmouseover="changeColor('Red')" onclick="loadpage('Red')">
                             <img id="prodimg"src="assets/LobsterSlippersGreen.jpg" alt="A picture of the TOTENJS Lobster Slippers" onmouseover="changeColor('Green')" onclick="loadpage('Green')">

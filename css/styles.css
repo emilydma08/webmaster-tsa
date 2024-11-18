@@ -21,7 +21,7 @@ body, ul, li{
 
 /*Navbar Styling*/
 .navbar{
-    background-color: var(--light-beige);
+    background-image: linear-gradient(var(--light-beige),var(--light-beige));
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -43,6 +43,10 @@ body, ul, li{
     list-style: none;
     font-family: Barlow;
     letter-spacing: 0.5px;
+}
+
+.navbar .active{
+    color: var(--red);
 }
 
 .navbar a{
@@ -73,9 +77,9 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: Playfair Display;
+    font-family: Barlow;
     position: relative;
-    margin-bottom: 0;
+    margin-bottom: 0px;
 }
 
 footer p a{
@@ -487,7 +491,12 @@ footer p a{
     justify-content: space-between;
  }
 
-  /*  Style for color choices in shop.HTML  */
+/*  #imageBig{
+    max-width: 100%;
+    max-height: 640px;
+ }
+ */
+  /*  Style for color choices in shop.html  */
   .product-color {    
     display: flex;
     flex-direction: row; 
@@ -504,8 +513,23 @@ footer p a{
     width: 70px;
     display:flex;
     justify-content: space-between;
- } 
+ }
 
+ .buy-button-shop{
+    background-color: var(--gray-black);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    margin-top: 30px; 
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .buy-button-shop:hover {
+    background-color: var(--red);
+  }
 /* This container will be used to display selection in Shop.html */
  .grid {
     display: grid;
