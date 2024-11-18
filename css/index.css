@@ -306,7 +306,7 @@ body{
 }
 
 .review-text {
-  font-size: 3.5rem;
+  font-size: 3em;
   margin: 10px 0;
 }
 
@@ -327,11 +327,11 @@ body{
 
 .chart h2{
     margin-bottom: 10px;
-    font-size: 3rem;
+    font-size: 3em;
 }
 
 .chart img{
-    width: 60%;
+    width: 50%;
     height: auto;
     padding-top: 20px;
 }
